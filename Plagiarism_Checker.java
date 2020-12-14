@@ -79,7 +79,9 @@ public class Plagiarism_Checker {
             		d=temp.toLowerCase();
             		i=0;
 		            lines.forEach((String line) -> {
-		            	if(line.contains(d)){
+		            	while(line.contains(d)){
+		            		int index = line.indexOf(d) + d.length();
+		        			line=line.substring(index);
 		                	i++;
 		                }
 			        });
