@@ -1,5 +1,5 @@
 # Plagiarism-Checker
-## Here is the small java program to check up the plagiarism of any type, or of any thing
+### Here is the small java program to check up the plagiarism of any type, or of any thing
 
 ## Installation
 
