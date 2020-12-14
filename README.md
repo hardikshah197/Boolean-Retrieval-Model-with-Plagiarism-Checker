@@ -3,7 +3,7 @@
 
 ## Installation
 
-Use this plagiarism_checker component [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
+Use this plagiarism_checker component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
 
 ```bash
 git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
