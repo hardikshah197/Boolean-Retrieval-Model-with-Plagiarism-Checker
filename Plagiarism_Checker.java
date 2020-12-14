@@ -6,12 +6,18 @@ import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Dictionary;
+import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 public class Plagiarism_Checker {
 
@@ -22,6 +28,9 @@ public class Plagiarism_Checker {
     private static Dictionary word;
     
     public static void main(String[] args) {
+    	
+    	String time1 = LocalTime.now().toString();
+    	
         Path folderPath = Paths.get(FOLDER_PATH);
 
         // prepare a data structure for a file's name and content
@@ -73,29 +82,57 @@ public class Plagiarism_Checker {
 		}
         
         // finally, searching the required words
-	        linesOfFiles.forEach((String fileName, List<String> lines) -> {
-	        	word = new Hashtable();
-	        	for(String temp: st){
-            		d=temp.toLowerCase();
-            		i=0;
-		            lines.forEach((String line) -> {
-		            	while(line.contains(d)){
-		            		int index = line.indexOf(d) + d.length();
-		        			line=line.substring(index);
-		                	i++;
-		                }
-			        });
-		            word.put(d, i);
-	        	}
-//	            System.out.print(fileName+"   -- "+d+" -- "+i+" --- "+word+"\n");
-//	            System.out.println("———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
-	           freqOfWords.put(fileName, word); 
-	        });
-//    	}
+        linesOfFiles.forEach((String fileName, List<String> lines) -> {
+        	word = new Hashtable();
+        	for(String temp: st){
+        		d=temp.toLowerCase();
+        		i=0;
+	            lines.forEach((String line) -> {
+	            	line = " " + line;
+	            	line = line.toLowerCase();
+	            	for(int k=0;k<line.length();k++){
+	            		char ch=line.charAt(k);
+	            		if((ch >=65 && ch <=90) || (ch >=97 && ch <= 122) || (ch >= 48 && ch <= 57));
+	            		else{
+	            			line.replace(ch, ' ');
+	            		}
+	            	}
+	            	while(line.contains(" "+d+" ")){
+	            		int index = line.indexOf(d) + d.length();
+	        			line=line.substring(index);
+	                	i++;
+	                }
+		        });
+	            word.put(d, i);
+        	}
+//	        System.out.print(fileName+"   -- "+d+" -- "+i+" --- "+word+"\n");
+//	        System.out.println("———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
+           freqOfWords.put(fileName, word); 
+        });
         freqOfWords.forEach((String fileName, Dictionary t) -> {
-        	System.out.println(fileName+" has "+ t +" words comman");
+        	int count =0;
+        	for (Enumeration i = t.elements(); i.hasMoreElements();) {
+        		if((int)(i.nextElement()) != 0){
+        			count++;
+        		}
+            } 
+        	System.out.println(fileName+" has "+ count +" words comman \n"+t);
         	System.out.println("———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
         });
         
+        String time2 = LocalTime.now().toString();
+        SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss");
+        Date date1;
+        Date date2;
+        long difference = 0;
+		try {
+			date1 = format.parse(time1);
+			date2 = format.parse(time2);
+			difference = date2.getTime() - date1.getTime(); 
+		} catch (ParseException e) {
+		 //TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        System.out.println("Time your code takes up -- "+ time1+ " seconds "+ time2);
     }
 }
