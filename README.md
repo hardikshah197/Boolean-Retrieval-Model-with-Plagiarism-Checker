@@ -11,8 +11,8 @@ git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
 
 ## Usage
 ### Basic changes you have to done to run the code
->Change `Folder_Path` value with your directory path where all your files lay
->Change `SearchFile_Path` value with your answered or key valued file's path
+> - Change `Folder_Path` value with your directory path where all your files lay
+> - Change `SearchFile_Path` value with your answered or key valued file's path
 
 
 ## Contributing
