@@ -6,9 +6,9 @@
 #### This has 3 files: - servlet, plagiarism-checker, and Searcher-analyzier
 > - Plagiarism Checker basically finds out pass-off content and searched its frequency *** Co-oresponding to ~~~Syntax~~~ Solution file you upload***
 > - Searcher Retrival Analysier does give you full analysied table containing following things :- 
-  > - How many Nodes (Analyzing-files) have plagiarism.
-  > - Starting and Ending time for the above task.
-  > - Total time difference taken in this process.
+    - How many Nodes (Analyzing-files) have plagiarism.
+    - Starting and Ending time for the above task.
+    - Total time difference taken in this process.
 
 ## Installation
 
