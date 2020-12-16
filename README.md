@@ -18,7 +18,7 @@ Use this plagiarism_checker or Searcher component to your plagiarism [click here
 git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
 cd Plagiarism-Checker
 java Plagiarism_Checker
-java Searcher_Retival_Model
+java Searcher_Retival_Analyzier
 ```
 
 ## Usage
