@@ -6,14 +6,13 @@
 #### This has 3 files: - servlet, plagiarism-checker, and Searcher-analyzier
 > - Plagiarism Checker basically finds out pass-off content and searched its frequency *** Co-oresponding to ~~~Syntax~~~ Solution file you upload***
 > - Searcher Retrival Analysier does give you full analysied table containing following things :- 
-    - How many Nodes (Analyzing-files) have plagiarism.
-    - Starting and Ending time for the above task.
-    - Total time difference taken in this process.
+    > - How many Nodes (Analyzing-files) have plagiarism.
+    > - Starting and Ending time for the above task.
+    > - Total time difference taken in this process.
 
 ## Installation
 
-Use this plagiarism_checker component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
-Use this Search-Retival component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
+Use this plagiarism_checker or Searcher component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar..
 
 ```bash
 git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
