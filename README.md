@@ -1,16 +1,26 @@
 # Plagiarism-Checker
 ### Here is the small java program to check up the plagiarism of any type, or of any thing
 
+## Basic intructions before use
+
+#### This has 3 files: - servlet, plagiarism-checker, and Searcher-analyzier
+> - Plagiarism Checker basically finds out pass-off content and searched its frequency *** Co-oresponding to ~~~Syntax~~~ Solution file you upload***
+> - Searcher Retrival Analysier does give you full analysied table containing following things :- 
+  > - How many Nodes (Analyzing-files) have plagiarism.
+  > - Starting and Ending time for the above task.
+  > - Total time difference taken in this process.
+
 ## Installation
 
 Use this plagiarism_checker component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
+Use this Search-Retival component to your plagiarism [click here](https://github.com/hardikshah197/Plagiarism-Checker.git) to download foobar.
 
 ```bash
 git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
 ```
 
 ## Usage
-### Basic changes you have to done to run the code
+### Basic changes you have to done before to run the code for both the models
 > - Change `Folder_Path` value with your directory path where all your files lay
 > - Change `SearchFile_Path` value with your answered or key valued file's path
 
