@@ -54,7 +54,7 @@ public class Plagiarism_Checker {
         for (String file : fileNames) {
             try {
                 // put the file's name and its content into the data structure
-                List<String> lines = Files.readAllLines(folderPath.resolve(file));
+                List<String> lines = Files.readAllLines(folderPath.resolve(file), StandardCharsets.ISO_8859_1);
                 linesOfFiles.put(file, lines);
             } catch (IOException e) {
                 e.printStackTrace();
@@ -106,7 +106,7 @@ public class Plagiarism_Checker {
 	            word.put(d, i);
         	}
 //	        System.out.print(fileName+"   -- "+d+" -- "+i+" --- "+word+"\n");
-//	        System.out.println("———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
+//	        System.out.println("â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”");
            freqOfWords.put(fileName, word); 
         });
         freqOfWords.forEach((String fileName, Dictionary t) -> {
@@ -117,7 +117,7 @@ public class Plagiarism_Checker {
         		}
             } 
         	System.out.println(fileName+" has "+ count +" words comman \n"+t);
-        	System.out.println("———————————————————————————————————————————————————————————————————————————————————————————————————————————————");
+        	System.out.println("â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”");
         });
         
         String time2 = LocalTime.now().toString();
