@@ -17,6 +17,9 @@ Use this Search-Retival component to your plagiarism [click here](https://github
 
 ```bash
 git clone "https://github.com/hardikshah197/Plagiarism-Checker.git"
+cd Plagiarism-Checker
+java Plagiarism_Checker
+java Searcher_Retival_Model
 ```
 
 ## Usage
