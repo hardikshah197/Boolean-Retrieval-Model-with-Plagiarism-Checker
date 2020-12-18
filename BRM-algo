@@ -1,6 +1,9 @@
 Module -- 1 STORING FILES
 Theory: - 
-	Storing files model is the first part of both sequencial as well as the parallel sequencial model. Baiscally what all this model does is that, it first find out the directory path where all the searchable files lay. Then it one by one pick up all the files and take their content to the TressMap data structure and also it do it the same for the search file where all the searchable words are present. By this means, it speeds up the searching logic and the controller never have to go back to the secondary memory again and again for every search.
+	Storing files model is the first part of both sequencial as well as the parallel sequencial model. Baiscally what all this model does is that,
+	it first find out the directory path where all the searchable files lay. Then it one by one pick up all the files and take their content to the 
+	TressMap data structure and also it do it the same for the search file where all the searchable words are present. By this means, it speeds up
+	the searching logic and the controller never have to go back to the secondary memory again and again for every search.
 
 Algorithm:- 
 	1. Initializing the variable FOLDER_PATH store directory path.
@@ -24,7 +27,10 @@ Algorithm:-
 	
 Module -- 2 Q Algo & SymbolRemover
 Theory: -
-	Symbol Remover and Queing algorithm comes second in sequencial model, right after the storing files. It's work is also very straight forward just to reduce down the time taken for searching out the result, what all this model does is that, it removes off all the comman grammatical words like are, is, the and so on, along with all the punctuations which would make our task more difficult to find out our desired word. It also eleminates out the enters i.e new line characters and replaces them by a space.
+	Symbol Remover and Queing algorithm comes second in sequencial model, right after the storing files. It's work is also very straight
+	forward just to reduce down the time taken for searching out the result, what all this model does is that, it removes off all the 
+	comman grammatical words like are, is, the and so on, along with all the punctuations which would make our task more difficult to
+	find out our desired word. It also eleminates out the enters i.e new line characters and replaces them by a space.
 
 Algorithm: -
 	1. For each file in "linesOfFiles".
@@ -49,8 +55,13 @@ Algorithm: -
 
 Module -- 3 Creation of Indexes and Posting lists (String w)
 Theory: -
-	Creation of Indexes means finding out the result through out the directory along with their frequencies. And posting list is the storing of each result as a recorded list with each file along with filename. Basically, what all is taking place here in this model is, it first retrieve throw content of all the files and read the content word by word and matches them out with the required word if it is matched up, frequency variable has been upgraded and this process continues till every file is being retrieved out from TreeMap, then stores up the result in the form of dictionary attached with the respective file name as tag.
+	Creation of Indexes means finding out the result through out the directory along with their frequencies. And posting list 
+	is the storing of each result as a recorded list with each file along with filename. Basically, what all is taking place here
+	in this model is, it first retrieve throw content of all the files and read the content word by word and matches them out
+	with the required word if it is matched up, frequency variable has been upgraded and this process continues till every file 
+	is being retrieved out from TreeMap, then stores up the result in the form of dictionary attached with the respective file name as tag.
 	
+Algorithm: -
 	1. Initializing an Integer array of size to that of Dictionary "word".
 	2. Fill the array with 0.
 	3. Initialize counter i to 0.
