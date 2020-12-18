@@ -1,10 +1,11 @@
 		Parallel Sequencial Execution of BRM
 
 Theory:-
-	This Parallel Sequencial Model for searching of Boolean Retrieval Model is basically works on the basic principles of Multi-threading. Here we, let's suppose have to search out any two literals, so what we do is, we create a new thread for each search. So, for two search there are two threads for this. And these two threads will work out like they both start at same time let us suppose t1, and ends up approximately together, depending upon their search through directory.
-In this way, rather searching them one by one, we found the result for both only at the cost of one's executional time.
-
-
+	This Parallel Sequencial Model for searching of Boolean Retrieval Model is basically works on the basic principles of 
+	Multi-threading. Here we, let's suppose have to search out any two literals, so what we do is, we create a new thread for 
+	each search. So, for two search there are two threads for this. And these two threads will work out like they both start
+	at same time let us suppose t1, and ends up approximately together, depending upon their search through directory.
+	In this way, rather searching them one by one, we found the result for both only at the cost of one's executional time.
 
 
 Algorithm:- 
