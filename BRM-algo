@@ -1,0 +1,68 @@
+Module -- 1 STORING FILES
+
+	1. Initializing the variable FOLDER_PATH store directory path.
+	2. Paths.get(FOLDER_PATH) : loads up the path of directory.
+	3. Initializing a TreeMap named "linesOfFiles" to store filename and its content.
+	4. Initializing a TreeMap named "freqOfWords" to store searched word co-oresponding to 		   files.
+	5. Initializing a Dictionary named "word" to store frequency of each words to be searched.
+	6. Initializing an ArrayList named "fileNames" to store names of files in directory.
+	7. For each directoryStream in Files.newDirectoryStream(Paths.get(FOLDER_PATH))
+		A. Add files path into "fileNames" as its name.
+		(end of for loop)
+	8. For file in "fileNames"
+		A. Initializing the String List named "lines".
+		B. lines = Files.readAllLines(folderPath.resolve(file))
+		(end of for loop)
+	9. Initializing an ArrayList of String type named "st" to store searching words.
+	10.Initializing a FileReader for "SEARCH_FILE_PATH".
+	11.For each line of aboved file
+		A. Putting word in "st" ArrayList
+		(end of loop)
+	
+Module -- 2 Q Algo & SymbolRemover
+
+	1. For each file in "linesOfFiles".
+		A. Initializing a dictionary "word" to store searched words along its frequency.
+		B. For each word 'temp' in "st"
+			i. Initializing d = temp as LowerCase.
+			ii. Initializing counter i to 0.
+			iii. For line as 'line' in "lines".
+				a. line = " " + line (Add space in beginning of each line).
+				b. line = line as LowerCase.
+				c. For each character c in 'line'.
+					I. If c is other than alphabet or number,replace it with " "(space)
+					(end of for loop)
+			 	d. For each line containing d.
+					I. Increase counter i by 1.
+					(end of for loop)
+				(end of loop)
+			iv. Put searched word "d" along its frequency "i" to "word".
+			(end of loop)
+		C. Put file name "fileName" along resulted dictionary "word" to "freqOfWords".
+		(end of loop)
+
+Module -- 3 Creation of Indexes and Posting lists (String w)
+	
+	1. Initializing an Integer array of size to that of Dictionary "word".
+	2. Fill the array with 0.
+	3. Initialize counter i to 0.
+	4. For each word "t" in "st".
+		A. Initialize d to t as LowerCase.
+		B. For each file "fileNames" in "linesOfFiles".
+			i. Initialize counter c to 0.
+			ii. For each line 'line' in "fileNames" 
+				a. Add " "(space) on before and after the line.
+				b. Convert line to LowerCase.
+				c. For each 'line' contains "d"
+					I. Increase counter c by 1.
+					(end of loop)
+				(end of loop)
+			iii. If counter is greater than 0.
+				a. Increase value of countNode at index i by 1.
+			(end of loop)
+		C. Increase counter i by 1.
+		(end of loop)
+	
+					
+	
+
