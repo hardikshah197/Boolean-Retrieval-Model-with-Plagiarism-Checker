@@ -27,10 +27,10 @@ Algorithm:-
 			    i. Convert this word into lower case.
 			    ii. Initialize a counter to 0.
 			    iii. For each line in lines
-				    I. Convert this line into lower case
-				    II. For each character of this line:
-					Check if character is other than alphabet or a number, replace it with space (‘ ‘). 
-			    	    III. For this line check if this search word is present, increase the counter by 1
+				    A. Convert this line into lower case
+				    B. For each character of this line:
+				    	  I. Check if character is other than alphabet or a number, replace it with space (‘ ‘). 
+			    	    C. For this line check if this search word is present, increase the counter by 1
 			    iv. Put word along with its counter into wordDictonary.
 		    b. Put filename and wordDictionary into freqofWords.
 	    5. Set  i=0
