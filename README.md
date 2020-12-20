@@ -3,13 +3,14 @@
 
 ## Basic intructions before use
 
-#### This repository has 3 files: - servlet, plagiarism-checker, and Searcher-analyzier
+#### This repository has 5 files: - servlet, plagiarism-checker, Searcher-analyzier, Multi-Threaded-Search-retrival-model, and couple of text files.
 - Plagiarism Checker basically finds out pass-off content and searched its frequency **Co-oresponding to ~~Syntax~~ Solution file you upload**.
 - Plagiarism Servlet does the same what Plagiarism do, but it would render out result on Frontend.
 - Searcher Retrival Analysier does give you full analysied table containing following things:
   1. How many Nodes (Analyzing-files) have plagiarism.
   2. Starting and Ending time for the above task.
   3. Total time difference taken in this process.
+- Multi-Threaded Searcher Model ....
 
 ## Installation
 
