@@ -14,6 +14,7 @@
 - Documentations contains 2 things the Algorithm and Report-~~Thyesis~~ Analysis:
   1. Algorithm contains the algorithms of BRM multi-threading(**Paralled Extraction Retrival Model**) and Searcher-Retrival(**Sequncial Extraction Retrival Model**).
   2. A DOCX file which is the documentation of whole BRM model. 
+- Files is the rar file which contains some sample text files for testing purpose.
 
 ## Installation
 
