@@ -18,7 +18,7 @@
 
 ## Installation
 
-Use this plagiarism_checker or BRM component to your plagiarism [click here](https://github.com/hardikshah197/Boolean-Retrieval-Model-with-Plagiarism-Checker.git) to download foobar..
+Use this plagiarism_checker or BRM component to your plagiarism [click here](https://github.com/hardikshah197/Boolean-Retrieval-Model-with-Plagiarism-Checker.git) to download foobar *make sure you have JRE & JDK installed globally..
 
 ```bash
 git clone "https://github.com/hardikshah197/Boolean-Retrieval-Model-with-Plagiarism-Checker.git"
